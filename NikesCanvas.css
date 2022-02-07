@@ -13,6 +13,27 @@
         #showCase4_Bg {
             background-image: url("4.png");
         }
+        /*To edit the scroll bar*/
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: #C4A092;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #AD795B;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #5B3E31;
+        }
         /* Animation for the text to fade in*/
         
         .fade-in-text {
@@ -73,7 +94,6 @@
         
         div.card:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: #5A352C;
         }
         /*#Logo {
             
@@ -228,4 +248,32 @@
             to {
                 stroke-dashoffset: 0;
             }
+        }
+        
+        .testimonyBox {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .testimonyBox p {
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        .testimonyText {
+            line-height: 300px;
+            height: 300px;
+            width: 70%;
+            position: relative;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .testimonyText p {
+            display: inline-block;
+            line-height: normal;
+            vertical-align: middle;
         }
