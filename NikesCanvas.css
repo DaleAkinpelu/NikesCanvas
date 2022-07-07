@@ -419,18 +419,46 @@
    /*Animation for the Youtube demographic*/
    /*Active links*/
    
-   ul>li:hover {
+   nav>div>div>ul>li:hover {
        color: white;
        border-style: none;
        border-bottom: 1px solid black;
    }
    
-   ul>li:active {
+   nav>div>div>ul>li:active {
        color: white;
        border-style: none;
        border-bottom: 1px solid black;
    }
    
    .bi-arrow-up-circle {
+       color: white;
+   }
+   
+   footer>div>div>div>ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       float: left;
+       display: inline;
+   }
+   
+   footer>div>div>div>ul>li {
+       display: inline;
+       list-style-type: none;
+       margin: 5px;
+       padding: 5px;
+       float: left;
+   }
+   
+   .bi-tiktok {
+       color: white;
+   }
+   
+   .bi-youtube {
+       color: white;
+   }
+   
+   .bi-instagram {
        color: white;
    }
