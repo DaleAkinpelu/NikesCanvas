@@ -1,3 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#showCase2_Bg {
+    background-image: url("2.png");
+    height: 100vh;
+    overflow: hidden;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+}
+
 #Logo path:nth-child(2) {
     stroke-dasharray: 233px;
     stroke-dashoffset: 233px;
@@ -162,7 +184,30 @@ ul>li:active {
     color: white;
 }
 
-#showCase2_Bg {
-    background-image: url("2.png");
-    height: 100vh;
+.bi-tiktok {
+    color: white;
+}
+
+.bi-youtube {
+    color: white;
+}
+
+.bi-instagram {
+    color: white;
+}
+
+footer>div>div>div>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+}
+
+footer>div>div>div>ul>li {
+    display: inline;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    float: left;
 }

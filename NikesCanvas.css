@@ -2,9 +2,23 @@
        background-image: url("Landing\ Page\ \(Monitor\).svg");
    }
    
+   #more {
+       display: inline;
+   }
+   
+   #dots {
+       display: none;
+   }
+   
    @media screen and (max-width: 1500px) {
        #mainBackground {
            background-image: url("Landing\ Page\ \(13_\).svg");
+       }
+       #more {
+           display: inline;
+       }
+       #dots {
+           display: none;
        }
    }
    /*To edit the scroll bar*/
@@ -461,4 +475,26 @@
    
    .bi-instagram {
        color: white;
+   }
+   
+   #myBtn {
+       display: none;
+   }
+   
+   @media screen and (max-width: 575.98px) {
+       #more {
+           display: none;
+       }
+       #dots {
+           display: inline;
+       }
+       #myBtn {
+           display: block;
+       }
+       #carLastItem {
+           display: none;
+       }
+       video {
+           width: 300px;
+       }
    }

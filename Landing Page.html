@@ -76,14 +76,14 @@
         <section class="bg-transparent text-light p-5 pt-4 text-center text-sm-start">
             <div class="container px-5">
                 <div class="row d-sm-flex align-items-center justify-content-between">
-                    <div class="col-6 ">
+                    <div class="col-sm-6 ">
                         <div class=" row fade-in-text">
                             <h1 class="display-2">Adenike Akinpelu</h1>
-                            <h1 class="display-6">Content Creator</h1>
+                            <h1 class="display-sm-6">Content Creator</h1>
                         </div>
                         <div><a href="#About"><button class="btn btn-dark btn-lg ">About Me</button></a></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <!--<div id="showcase_1_Carousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active " data-bs-interval="3000" style="z-index: 1;">
@@ -104,7 +104,7 @@
 
         <!-- Showcase_(About)-->
         <!--<div id="showCase2_Bg">-->
-        <section class="p-5 bg-transparent text-light text-start" id="About">
+        <section class="p-5 bg-transparent text-light text-md-start text-center" id="About">
             <div class="container px-5">
                 <div class="row justify-content-between">
                     <div class="col-md-6">
@@ -114,9 +114,12 @@
 
                         <div class="row">
                             <h1 class="card-title display-5">About me</h1>
-                            <p class="lead"> I started my journey as a content creator on Youtube reviewing products in an entertaining way. I do this because I believe that the best way to attract attention and retain information is by delivering the intended message
-                                in a fun way.</p>
-                            <p class="lead"> I am so grateful to have had the opportunity to partner with leading brands like Sephora, Nars, Onesize, Peace Out, Makeup Forever, and more</p>
+                            <p class="lead"> I started my journey as a content creator on Youtube reviewing products in an entertaining way. I do this because <span id="dots">...</span><span id="more">I believe that the best way to attract attention and retain information is by delivering the intended message
+                                in a fun way.<br>
+                                <br>
+                                 I am so grateful to have had the opportunity to partner with leading brands like Sephora, Nars, Onesize, Peace Out, Makeup Forever, and more</span></p>
+
+                            <button onclick="myFunction()" id="myBtn" class="btn btn-dark btn-sm ">Read more</button>
                         </div>
                         <!-- The recent Campaign section -->
                         <div class="row">
@@ -166,7 +169,7 @@
         <!--<div id="showCase3_Bg">-->
         <section class="p-5 bg-transparent text-light">
             <div class="container px-5">
-                <div class="row text-start">
+                <div class="row text-md-start text-center">
                     <h1 class="display-1">What I Can Do</h1>
                     <p class="lead">Our main services face makeup, eyebrown makeup, haircut makeup, facial makeup, dressing table, bride makeup, wedding makeup, effect makeup, occasion makeup etc.</p>
                 </div>
@@ -178,7 +181,7 @@
                                 <ul class="list-group list-group-flush ">
                                     <li class="list-group-item bg-transparent text-white">Carousel featuring Product shots</li>
                                     <li class="list-group-item bg-transparent text-white">High-Resolution Quality</li>
-                                    <li class="list-group-item bg-transparent text-white">Caption & Link in Bio</li>
+                                    <li class="list-group-item bg-transparent text-white">Example Below</li>
                                     <li class="list-group-item bg-transparent"><button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#HairModal">Example</button></li>
                                 </ul>
                             </div>
@@ -189,7 +192,7 @@
                                             <h5 class="modal-title" id="HairLabel" style="color: black;">HAIR</h5>
                                         </div>
                                         <div class="modal-body">
-                                            <video width="500px" height="500px" controls>
+                                            <video id="instaVideo" width="500px" height="500px" controls>
                                                 <source src="InstaCreativeMakeupmp4.mp4" type="video/mp4">
                                               Your browser does not support the video tag.
                                               </video>
@@ -204,9 +207,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">SKINCARE</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent text-white">An item</li>
+                                    <li class="list-group-item bg-transparent text-white">Skincare Items</li>
                                     <li class="list-group-item bg-transparent text-white">High-Resolution Quality</li>
-                                    <li class="list-group-item bg-transparent text-white">Caption & Link in Bio</li>
+                                    <li class="list-group-item bg-transparent text-white">Example Below</li>
                                     <li class="list-group-item bg-transparent"><button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#SkincareModal">Example</button></li>
                                 </ul>
                             </div>
@@ -217,7 +220,7 @@
                                             <h5 class="modal-title" id="SkincareLabel" style="color: black;">SKINCARE</h5>
                                         </div>
                                         <div class="modal-body">
-                                            <video width="500px" height="500px" controls>
+                                            <video id="skinVideo" width="500px" height="500px" controls>
                                                 <source src="Skincaremp4.mp4" type="video/mp4">
                                               Your browser does not support the video tag.
                                               </video>
@@ -292,7 +295,7 @@
 
         <!--Demographic -->
 
-        <section class="p-5 text-light bg-transparent">
+        <section class="p-5 text-light bg-transparent text-md-start text-center">
             <div class="container px-5 ">
                 <div class="row ">
                     <div class="col ">
@@ -304,9 +307,9 @@
                     </div>
                     <div class="col ">
                         <!--demographic graphs-->
-                        <div class="container p-5 ">
+                        <div class="container p-5 justify-content-center align-items-center ">
                             <div class="d-grid gap-2 ">
-                                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#TikTokModal">Click To View Demographic</button>
+                                <button type="button" id="demo1" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#TikTokModal">View Demographic</button>
                             </div>
                         </div>
                         <!--modal-->
@@ -326,7 +329,7 @@
                 </div>
                 <div class="row ">
                     <div class="col ">
-                        <div class="justify-content-centter align-items-center ">
+                        <div class="justify-content-center align-items-center ">
                             <h1 class="display-1 ">INSTAGRAM <span><i class="bi bi-instagram "></i></span>
                                 <br><span class="lead ">Demographic </span>
                             </h1>
@@ -334,9 +337,9 @@
                     </div>
                     <div class="col ">
                         <!--Instagram demographic graphs-->
-                        <div class="container p-5 ">
+                        <div class="container p-5 justify-content-center align-items-center ">
                             <div class="d-grid gap-2 ">
-                                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#InstaModal">Click To View Demographic</button>
+                                <button type="button" id="demo2" class="btn btn-dark btn-sm " data-bs-toggle="modal" data-bs-target="#InstaModal">View Demographic</button>
                             </div>
                         </div>
                         <!--modal-->
@@ -364,9 +367,9 @@
                     </div>
                     <div class="col ">
                         <!--demographic graphs-->
-                        <div class="container p-5 ">
+                        <div class="container p-5 justify-content-center align-items-center">
                             <div class="d-grid gap-2 ">
-                                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#YTModal">Click To View Demographic</button>
+                                <button type="button" id="demo3" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#YTModal">View Demographic</button>
                             </div>
                         </div>
                         <!--modal-->
@@ -404,8 +407,8 @@
             <div class="container " id="contacts">
                 <div class="row g-4 ">
                     <div class="col-md-6 ">
-                        <div class="testimonyBox ">
-                            <h2 class="text-start mb-4 text-white "> 📇 Contact Info </h2>
+                        <div class="testimonyBox text-md-start text-center">
+                            <h2 class="text-md-start text-center mb-4 text-white "> 📇 Contact Info </h2>
                             <ul class="list-group list-group-flush lead ">
                                 <li class="list-group-item text-white bg-transparent "> 📱 PHONE: +16477022384</li>
                                 <li class="list-group-item text-white bg-transparent "> 📧 EMAIL: HELLO@NIKESCANVAS.COM</li>
@@ -433,7 +436,7 @@
                                         <div class="carousel-item " data-bs-interval="5000">
                                             <p class=" text-white text-md-center "> Awesome, thank you so much! We really appreciate your partnership to help us make this launch such a success!
                                                 <br>
-                                                <br> Also, so excited to see how well your content performed, great job again 😁
+                                                <br> <span id="carLastItem">  Also, so excited to see how well your content performed, great job again 😁</span>
                                             </p>
                                         </div>
                                     </div>
@@ -446,7 +449,7 @@
             </div>
         </section>
 
-        <footer class="p-5 text-white text-center position-relative bg-dark">
+        <footer class=" footer p-5 text-white text-center position-relative bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col">

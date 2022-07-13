@@ -15,7 +15,7 @@
     <title>Gallery</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <div id="showCase2_Bg">
         <nav class="navbar navbar-expand-lg  navbar-dark py-3 " style=" Background: transparent; ">
             <div class="container px-5">
@@ -70,25 +70,51 @@
                 </div>
             </div>
         </nav>
-        <section class="bg-transparent text-light p-5 pt-4 text-center text-sm-start">
-            <div class="container px-5 align-items-center " style="padding-bottom: 25vh; padding-top: 8.3vh;">
+        <section class="bg-transparent text-light p-5 pt-4 text-center text-sm-start" id="page-container">
+            <div class="container px-5 align-items-center ">
                 <div class="align-items-center text-center ">
                     <h1 class="display-2">COMING SOON</h1>
                     <h5 class="display-6">This page is coming soon.<br> We are working very hard to give you the best experience</h5>
                 </div>
-                <div style="padding-left: 65vh; padding-top: 20px; ">
+                <div>
                     <a href="Landing Page.html"><button class="btn btn-dark btn-lg ">Go Back</button></a></div>
             </div>
         </section>
-        <footer class="p-5 text-white text-center position-relative bg-dark navbar fixed-bottom foot">
+        <footer class=" footer p-5 text-white text-center position-absolute bg-dark" id="footer">
             <div class="container">
-                <p class="lead ">Copyright &copy; 2022 bootstrap</p>
-                <!-- <a href="# " class="position-absolute bottom-0 end-0 p-5 ">
-                    <i class="bi bi-arrow-up-circle h1 "></i>
-                </a> -->
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="https://www.tiktok.com/@nikescanvas">
+                                    <i class="bi bi-tiktok h3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/nikescanvas/">
+                                    <i class="bi bi-instagram h3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/c/AdenikeAkinpelubeauty ">
+                                    <i class="bi bi-youtube h3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="lead ">Copyright &copy; 2022 bootstrap</p>
+                    </div>
+                    <div class="col">
+                        <a href="# " class="position-absolute bottom-0 end-0 p-5 ">
+                            <i class="bi bi-arrow-up-circle h3 "></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 
 </html>
